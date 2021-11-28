@@ -1,8 +1,9 @@
 from setuptools import setup
 
-setup(name='looplist',
-      version='0.0',
+
+setup(name='loopedlist',
+      version='0.0.1',
       description='Adds looped containers to Python 3.x',
-      packages=['looplist'],
+      packages=['loopedlist'],
       author_email='musailov2004@mail.ru',
       zip_safe=False)

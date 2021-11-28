@@ -1,4 +1,12 @@
 class looplist(list):
+    """
+    looplist[x] == list[x % len(list)]
+    Making mutable sequence with finite item quantity and infinite possible item number.
+    Equivalent to list sequence.
+
+    If no argument is given, the constructor creates a new empty list.
+    The argument must be an iterable if specified.
+    """
     def __init__(self, value, length=0):
         super(looplist, self).__init__()
         self.t = list(value)
@@ -35,6 +43,14 @@ class looplist(list):
 
 
 class looptuple(tuple):
+    """
+    looptuple[x] == list[x % len(list)]
+    Making immutable sequence with finite item quantity and infinite possible item number.
+    Equivalent to tuple sequence.
+
+    If no argument is given, the constructor creates a new empty list.
+    The argument must be an iterable if specified.
+    """
     def __init__(self, value, length=0):
         super(looptuple, self).__init__()
         self.t = tuple(value)
@@ -54,4 +70,4 @@ class looptuple(tuple):
             yield self[i]
 
 
-__name__ = 'looplist'
+__name__ = 'loopedlist'
