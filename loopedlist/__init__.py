@@ -1,7 +1,13 @@
+# encoding: utf-8
+# module loopedlist
+"""
+This module provides access to the modified built-in containers with looped number of items
+"""
+
 class looplist(list):
     """
     looplist[x] == list[x % len(list)]
-    Making mutable sequence with finite item quantity and infinite possible item number.
+    Makes mutable sequence with finite item quantity and infinite possible item number.
     Equivalent to list sequence.
 
     If no argument is given, the constructor creates a new empty list.
@@ -45,7 +51,7 @@ class looplist(list):
 class looptuple(tuple):
     """
     looptuple[x] == list[x % len(list)]
-    Making immutable sequence with finite item quantity and infinite possible item number.
+    Makes immutable sequence with finite item quantity and infinite possible item number.
     Equivalent to tuple sequence.
 
     If no argument is given, the constructor creates a new empty list.
